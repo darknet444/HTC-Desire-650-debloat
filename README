@@ -4,8 +4,18 @@ Step 1 go to settings-about-Software,information-More and press 6 Times on Build
 
 Step 2 go to settings-Developer options and enable USB DEBUGGING
 
-Step 3 Install adb Debian : sudo apt-get install android-tools-adb android-tools-fastboot RedHat : sudo dnf install adb Arch : sudo pacman -S android-tools
+Step 3 Install adb : Debian = sudo apt-get install android-tools-adb android-tools-fastboot 
+                   : Redhat = sudo dnf install adb 
+                   : Arch   = sudo pacman -S android-tools
 
-Step 4 make script executable run : chmod +x debloat-script.sh
+Step 4 Install git and curl : Debian = sudo apt-get curl git 
+                            : Redhat = sudo dnf install curl git 
+                            : Arch = sudo pacman -S curl git 
 
-Step 5 Run script ./debloat-script.sh whene this script says done your phone while reboot
+Step 5 clone repo : Debian = git clone https://github.com/darknet444/HTC-Desire-650-debloat.git  
+                  : Redhat = git clone https://github.com/darknet444/HTC-Desire-650-debloat.git
+                  : Arch   = git clone https://github.com/darknet444/HTC-Desire-650-debloat.git
+
+Step 6 make script executable run : chmod +x debloat-script.sh
+
+Step 7 Run script ./debloat-script.sh whene this script says done your phone while reboot
