@@ -1,0 +1,11 @@
+This script while debloat HTC Desire 650
+
+Step 1 go to settings-about-Software,information-More and press 6 Times on Build number
+
+Step 2 go to settings-Developer options and enable USB DEBUGGING
+
+Step 3 Install adb Debian : sudo apt-get install android-tools-adb android-tools-fastboot RedHat : sudo dnf install adb Arch : sudo pacman -S android-tools
+
+Step 4 make script executable run : chmod +x debloat-script.sh
+
+Step 5 Run script ./debloat-script.sh whene this script says done your phone while reboot
