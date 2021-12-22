@@ -12,9 +12,8 @@ Step 4 Install git and curl : Debian = sudo apt-get curl git
                             : Redhat = sudo dnf install curl git 
                             : Arch = sudo pacman -S curl git 
 
-Step 5 clone repo : Debian = git clone https://github.com/darknet444/HTC-Desire-650-debloat.git  
-                  : Redhat = git clone https://github.com/darknet444/HTC-Desire-650-debloat.git
-                  : Arch   = git clone https://github.com/darknet444/HTC-Desire-650-debloat.git
+Step 5 clone repo with : git clone https://github.com/darknet444/HTC-Desire-650-debloat.git  
+                                  
 
 Step 6 make script executable run : chmod +x debloat-script.sh
 
