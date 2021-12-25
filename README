@@ -8,10 +8,9 @@ Step 3 Install adb,git,curl : Debian = sudo apt-get install adb git curl
                             : Redhat = sudo dnf install adb git curl 
                             : Arch   = sudo pacman -S android-tools git curl 
 
-
-Step 5 clone repo with : git clone https://github.com/darknet444/HTC-Desire-650-debloat.git  
+Step 4 clone repo with : git clone https://github.com/darknet444/HTC-Desire-650-debloat.git  
                                   
 
-Step 6 make script executable run : chmod +x debloat-script.sh
+Step 5 make script executable run : chmod +x debloat-script.sh
 
-Step 7 Run script ./debloat-script.sh whene this script says done your phone while reboot
+Step 6 Run script ./debloat-script.sh whene this script says done your phone while reboot
