@@ -52,10 +52,8 @@ adb shell pm uninstall --user 0 com.android.defcontainer
 
 echo " Removing Google Apps "
 
-adb shell pm uninstall --user 0 com.google.android.gsf.login 
 adb shell pm uninstall --user 0 com.google.android.backuptransport 
 adb shell pm uninstall --user 0 com.google.android.partnersetup 
-adb shell pm uninstall --user 0 com.google.android.gsf
 adb shell pm uninstall --user 0 com.google.android.setupwizard 
 adb shell pm uninstall --user 0 com.google.android.youtube
 adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
