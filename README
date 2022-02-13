@@ -4,9 +4,9 @@ Step 1 go to settings-about-Software,information-More and press 6 Times on Build
 
 Step 2 go to settings-Developer options and enable USB DEBUGGING
 
-Step 3 Install adb,git,curl : Debian = sudo apt-get install adb git curl 
-                            : Redhat = sudo dnf install adb git curl 
-                            : Arch   = sudo pacman -S android-tools git curl 
+Step 3 Install adb,git,curl : Debian = sudo apt-get install adb git wget
+                            : Redhat = sudo dnf install adb git wget 
+                            : Arch   = sudo pacman -S android-tools git wget
 
 Step 4 clone repo with : git clone https://github.com/darknet444/HTC-Desire-650-debloat.git  
                                   
