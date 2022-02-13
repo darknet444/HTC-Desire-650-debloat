@@ -3,6 +3,7 @@
 #########################################################
 #		CHECK DEVICE CONNECT			#
 #########################################################
+
 adb devices 
 
 ########################################################
@@ -79,7 +80,6 @@ adb shell pm uninstall --user 0 com.google.android.talk
 adb shell pm uninstall --user 0 com.google.account.gsf.login
 adb shell pm uninstall --user 0 com.google.account.gsf
 adb shell pm uninstall --user 0 com.google.android.onetimeinitializer
-adb shell pm uninstall --user 0 com.google.android.packageinstaller
 
 echo " Removing Facebook Apps "
 
@@ -218,7 +218,6 @@ adb shell pm uninstall --user 0 com.futuredial.idevicecloud
 adb shell pm uninstall --user 0 com.qualcomm.timeservice 
 #adb shell pm uninstall --user 0 com.emoji.keyboard.touchpal.oem
 #adb shell pm uninstall --user 0 com.htc.launcher
-
 
 echo " Downloading fdroid "
 
