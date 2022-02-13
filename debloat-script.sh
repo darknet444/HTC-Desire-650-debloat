@@ -80,7 +80,6 @@ adb shell pm uninstall --user 0 com.google.account.gsf.login
 adb shell pm uninstall --user 0 com.google.account.gsf
 adb shell pm uninstall --user 0 com.google.android.onetimeinitializer
 adb shell pm uninstall --user 0 com.google.android.packageinstaller
-adb shell pm uninstall --user 0 com.android.shell
 
 echo " Removing Facebook Apps "
 
