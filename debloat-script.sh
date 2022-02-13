@@ -72,8 +72,6 @@ adb shell pm uninstall --user 0 com.google.android.calendar
 adb shell pm uninstall --user 0 com.google.android.configupdater
 adb shell pm uninstall --user 0 com.google.android.gm.exchange
 adb shell pm uninstall --user 0 com.google.android.talk
-adb shell pm uninstall --user 0 com.google.account.gsf.login
-adb shell pm uninstall --user 0 com.google.account.gsf
 
 echo " Removing Facebook Apps "
 
