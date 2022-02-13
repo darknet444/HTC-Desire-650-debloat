@@ -145,7 +145,6 @@ adb shell pm uninstall --user 0 com.htc.sense.hsp
 adb shell pm uninstall --user 0 com.htc.home.personalize
 adb shell pm uninstall --user 0 com.htc.resetnotify
 adb shell pm uninstall --user 0 com.htc.WifiRouter
-adb shell pm uninstall --user 0 com.htc.framework
 adb shell pm uninstall --user 0 com.htc.checkinprovider
 adb shell pm uninstall --user 0 com.htc.launcherupdatescreen
 adb shell pm uninstall --user 0 com.htc.uibc
