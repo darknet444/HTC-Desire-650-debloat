@@ -21,7 +21,6 @@ adb shell pm uninstall --user 0 com.android.backupconfirm
 adb shell pm uninstall --user 0 com.android.sharedstoragebackup 
 adb shell pm uninstall --user 0 com.android.wallpaper.holospiral 
 adb shell pm uninstall --user 0 com.android.wallpapercropper 
-adb shell pm uninstall --user 0 com.android.externalstorage 
 adb shell pm uninstall --user 0 com.android.statementservice 
 adb shell pm uninstall --user 0 com.android.pacprocessor 
 adb shell pm uninstall --user 0 com.android.phasebeam 
