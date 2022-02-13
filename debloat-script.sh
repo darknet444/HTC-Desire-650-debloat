@@ -224,7 +224,7 @@ adb shell pm uninstall --user 0 com.qualcomm.timeservice
 
 echo " Downloading fdroid "
 
-curl https://f-droid.org/F-Droid.apk  -O .
+wget https://f-droid.org/F-Droid.apk
 
 echo " Install fdroid "
 
