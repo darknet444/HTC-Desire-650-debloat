@@ -46,9 +46,6 @@ adb shell pm uninstall --user 0 com.android.server.telecom
 adb shell pm uninstall --user 0 com.android.nfc
 adb shell pm uninstall --user 0 com.android.location.fused
 adb shell pm uninstall --user 0 com.android.stk
-adb shell pm uninstall --user 0 com.android.inputdevices
-adb shell pm uninstall --user 0 com.android.keychain
-adb shell pm uninstall --user 0 com.android.defcontainer 
 
 echo " Removing Google Apps "
 
@@ -77,7 +74,6 @@ adb shell pm uninstall --user 0 com.google.android.gm.exchange
 adb shell pm uninstall --user 0 com.google.android.talk
 adb shell pm uninstall --user 0 com.google.account.gsf.login
 adb shell pm uninstall --user 0 com.google.account.gsf
-adb shell pm uninstall --user 0 com.google.android.onetimeinitializer
 
 echo " Removing Facebook Apps "
 
@@ -144,9 +140,6 @@ adb shell pm uninstall --user 0 com.htc.home.personalize
 adb shell pm uninstall --user 0 com.htc.resetnotify
 adb shell pm uninstall --user 0 com.htc.WifiRouter
 adb shell pm uninstall --user 0 com.htc.checkinprovider
-adb shell pm uninstall --user 0 com.htc.launcherupdatescreen
-adb shell pm uninstall --user 0 com.htc.uibc
-adb shell pm uninstall --user 0 com.htc.android.qxdm2sd
 
 echo " Removing Provider Apps "
 
