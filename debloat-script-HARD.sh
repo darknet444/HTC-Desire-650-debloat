@@ -1,17 +1,14 @@
 #!/bin/bash
+echo " Disable animations "
+adb shell settings put global window_animation_scale 0.0 && adb shell settings put global transition_animation_scale 0.0 && adb shell settings put global animator_duration_scale 0.0
 
-#########################################################
-#		CHECK DEVICE CONNECT			#
-#########################################################
-
-adb devices 
-
-########################################################
-#                  UNINSTALL APPS		       #
-########################################################
+echo " Clearing cache and data "
+for package in $(adb shell pm list packages -f | sed -e "s/.*=//" -e "s/\r//"); do
+    echo "Clearing cache for $package ..."
+    adb shell pm clear "${package}"
+done 
 
 echo " Removing Android Apps "
-
 adb shell pm uninstall --user 0 com.android.smith 
 adb shell pm uninstall --user 0 com.android.CSDFunctionG 
 adb shell pm uninstall --user 0 com.android.mms.service 
@@ -50,7 +47,6 @@ adb shell pm uninstall --user 0 com.android.keychain
 adb shell pm uninstall --user 0 com.android.bluetooth
 
 echo " Removing Google Apps "
-
 adb shell pm uninstall --user 0 com.google.android.backuptransport 
 adb shell pm uninstall --user 0 com.google.android.partnersetup 
 adb shell pm uninstall --user 0 com.google.android.setupwizard 
@@ -81,7 +77,6 @@ adb shell pm uninstall --user 0 com.google.android.onetimeinitializer
 adb shell pm uninstall --user 0 com.android.inputdevices
 
 echo " Removing Facebook Apps "
-
 adb shell pm uninstall --user 0	com.facebook.katana
 adb shell pm uninstall --user 0	com.facebook.orca
 adb shell pm uninstall --user 0	com.facebook.system
@@ -89,7 +84,6 @@ adb shell pm uninstall --user 0 com.facebook.appmanager
 adb shell pm uninstall --user 0 com.instagram.android
 
 echo " Removing Htc Apps" 
-
 adb shell pm uninstall --user 0 com.htc.drawingboard
 adb shell pm uninstall --user 0 com.htc.powersavinglauncher
 adb shell pm uninstall --user 0 com.htc.power_caoffload
@@ -148,7 +142,6 @@ adb shell pm uninstall --user 0 com.htc.checkinprovider
 adb shell pm uninstall --user 0 com.htc.camera2
 
 echo " Removing Provider Apps "
-
 adb shell pm uninstall --user 0 com.htc.provider.CustomizationSettings
 adb shell pm uninstall --user 0 com.mobilesrepublic.appy
 adb shell pm uninstall --user 0 org.codeaurora.ims
@@ -169,7 +162,6 @@ adb shell pm uninstall --user 0 com.htc.android.htcsetupwizard
 adb shell pm uninstall --user 0 com.htc.framework
 
 echo " Removing Cootek Apps "
-
 adb shell pm uninstall --user 0 com.cootek.smartinputv5.skin.defaultwhite 
 adb shell pm uninstall --user 0 com.cootek.smartinputv5.language.oem.englishgb
 adb shell pm uninstall --user 0 com.cootek.smartinputv5.language.oem.malayan
@@ -214,7 +206,6 @@ adb shell pm uninstall --user 0 com.cootek.smartinputv5.language.oem.cangjie
 adb shell pm uninstall --user 0 com.cootek.smartinputv5.language.oem.catalan
 
 echo " Removing Other Apps "
-
 adb shell pm uninstall --user 0 com.emoji.keyboard.touchpal.htc.smartsearch
 adb shell pm uninstall --user 0 com.qualcomm.location 
 adb shell pm uninstall --user 0 com.quicinc.cne.CNEService 
@@ -226,22 +217,21 @@ adb shell pm uninstall --user 0 com.qualcomm.timeservice
 #adb shell pm uninstall --user 0 com.htc.launcher
 
 echo " Downloading fdroid "
-
 wget https://f-droid.org/F-Droid.apk
 
 echo " Install fdroid "
-
 adb install F-Droid.apk 
 
 echo "waiting whene apps are Installed and Uninstalled"
-
-# Waiting whene apps are uninstalled
 sleep 60;
 
+echo " Clearing cache and data "
+for package in $(adb shell pm list packages -f | sed -e "s/.*=//" -e "s/\r//"); do
+    echo "Clearing cache for $package ..."
+    adb shell pm clear "${package}"
+done 
+
 echo "rebooting device"
-
-# Reboot device 
-
 adb reboot 
 
 # End of Script 
