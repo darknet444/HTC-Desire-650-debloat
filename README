@@ -1,16 +1,44 @@
-This script while debloat HTC Desire 650
+# HTC Desire 650 Debloat Script
 
-Step 1 go to settings-about-Software,information-More and press 6 Times on Build number
+Dit script helpt je om je HTC Desire 650 te ontdoen van onnodige applicaties (debloat).
 
-Step 2 go to settings-Developer options and enable USB DEBUGGING
+## Stappen
 
-Step 3 Install adb,git,curl : Debian = sudo apt-get install adb git wget
-                            : Redhat = sudo dnf install adb git wget 
-                            : Arch   = sudo pacman -S android-tools git wget
+### Stap 1: Activeer Ontwikkelaarsopties
+Ga naar `Instellingen -> Over -> Software-informatie -> Meer` en druk 6 keer op het buildnummer.
 
-Step 4 clone repo with : git clone https://github.com/darknet444/HTC-Desire-650-debloat.git  
-                                  
+### Stap 2: Schakel USB-foutopsporing in
+Ga naar `Instellingen -> Ontwikkelaarsopties` en schakel `USB-debugging` in.
 
-Step 5 make script executable run : chmod +x debloat-script.sh
+### Stap 3: Installeer ADB, Git en Curl
+Installeer de benodigde tools afhankelijk van je besturingssysteem:
 
-Step 6 Run script ./debloat-script.sh whene this script says done your phone while reboot
+- **Debian-gebaseerd:**
+    ```sh
+    sudo apt-get install adb git wget
+    ```
+- **Redhat-gebaseerd:**
+    ```sh
+    sudo dnf install adb git wget
+    ```
+- **Arch-gebaseerd:**
+    ```sh
+    sudo pacman -S android-tools git wget
+    ```
+
+### Stap 4: Clone de Repository
+Clone de repository met het volgende commando:
+```sh
+git clone https://github.com/darknet444/HTC-Desire-650-debloat.git
+
+### Stap 5: Maak het Script Uitvoerbaar
+chmod +x debloat-script.sh
+
+### Stap 6: Voer het Script uit
+./debloat-script.sh
+
+## Opmerkingen
+Dit script is gratis te gebruiken en bedoeld om te helpen het beheren van je HTC-Desire-650. Gebruik het op eigen risico.
+
+## Licentie
+Dit project is gelicentieerd onder de MIT-licentie - zie het LICENSE-bestand voor details.
